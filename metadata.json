@@ -1,0 +1,7 @@
+{
+  "name": "Eduvest - Stock Market Precision",
+  "description": "A modern, educational, and interactive stock market platform empowering investors with clarity, discipline, and AI-driven tools. Features include risk calculators, precision scoring, gamified learning, and a community hub.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
