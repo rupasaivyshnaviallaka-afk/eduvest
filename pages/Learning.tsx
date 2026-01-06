@@ -32,21 +32,51 @@ const QUIZ_DATA: Record<string, QuizQuestion[]> = {
     { id: 'b2', question: 'What is a "Dividend"?', options: ['A tax on stock sales', 'A share of profit paid to stockholders', 'The cost to buy a stock', 'A type of stock market index'], correctAnswer: 1 },
     { id: 'b3', question: 'What is a "Ticker Symbol"?', options: ['A secret code for brokers', 'The price of a stock', 'A unique series of letters representing a stock', 'The time a trade was made'], correctAnswer: 2 },
     { id: 'b4', question: 'Which of these is a major US stock index?', options: ['The NASDAQ', 'The Dollar', 'The Fed', 'The Treasury'], correctAnswer: 0 },
-    { id: 'b5', question: 'What is "Liquidity" in trading?', options: ['The amount of money in your bank', 'How easily an asset can be converted to cash without affecting price', 'The speed of internet connection', 'A type of market crash'], correctAnswer: 1 }
+    { id: 'b5', question: 'What is "Liquidity" in trading?', options: ['The amount of money in your bank', 'How easily an asset can be converted to cash without affecting price', 'The speed of internet connection', 'A type of market crash'], correctAnswer: 1 },
+    { id: 'b6', question: 'What is "Market Capitalization"?', options: ['The total profit of a company', 'The total value of a company\'s outstanding shares', 'The city where the stock exchange is located', 'The amount of tax a company pays'], correctAnswer: 1 },
+    { id: 'b7', question: 'A "Limit Order" is an order to:', options: ['Buy at any price', 'Buy or sell at a specific price or better', 'Cancel all previous orders', 'Limit your total number of trades'], correctAnswer: 1 },
+    { id: 'b8', question: 'What is a "Blue Chip" stock?', options: ['A high-risk startup stock', 'Stock in a well-established, financially sound company', 'A stock that only trades on Tuesdays', 'A stock that has just IPO\'d'], correctAnswer: 1 },
+    { id: 'b9', question: 'What does the P/E ratio measure?', options: ['Price vs. Expenses', 'Price vs. Earnings per share', 'Profit vs. Equity', 'Performance vs. Expectations'], correctAnswer: 1 },
+    { id: 'b10', question: 'What is "Diversification"?', options: ['Investing all money in one stock', 'Spreading investments across various assets to reduce risk', 'Buying stocks in different currencies only', 'Selling all stocks at once'], correctAnswer: 1 }
   ],
   intermediate: [
     { id: 'i1', question: 'What does RSI stand for in technical analysis?', options: ['Relative Strength Index', 'Random Stock Indicator', 'Rate of Stock Increase', 'Real-time Sentiment Index'], correctAnswer: 0 },
     { id: 'i2', question: 'A "Support Level" is generally where:', options: ['Sellers outnumber buyers', 'Price stops falling and starts rising', 'Price stops rising and starts falling', 'The market closes for the day'], correctAnswer: 1 },
     { id: 'i3', question: 'What is a "Moving Average"?', options: ['The average speed of a trader', 'A smoothed line representing average price over time', 'The total volume of trades', 'The peak price of the year'], correctAnswer: 1 },
     { id: 'i4', question: 'What does "Volume" represent?', options: ['The price of a stock', 'The total number of shares traded in a period', 'The noise level of the trading floor', 'The market cap of a company'], correctAnswer: 1 },
-    { id: 'i5', question: 'Which chart pattern is typically "Bullish"?', options: ['Head and Shoulders', 'Double Top', 'Cup and Handle', 'Descending Triangle'], correctAnswer: 2 }
+    { id: 'i5', question: 'Which chart pattern is typically "Bullish"?', options: ['Head and Shoulders', 'Double Top', 'Cup and Handle', 'Descending Triangle'], correctAnswer: 2 },
+    { id: 'i6', question: 'What is a "Fibonacci Retracement"?', options: ['A tool to find potential support and resistance levels', 'A type of company audit', 'A method for calculating dividends', 'A stock market holiday'], correctAnswer: 0 },
+    { id: 'i7', question: 'What does "MACD" stand for?', options: ['Market Analysis and Chart Data', 'Moving Average Convergence Divergence', 'Mean Asset Cost Distribution', 'Monthly Account Credit Detail'], correctAnswer: 1 },
+    { id: 'i8', question: 'What is "Implied Volatility"?', options: ['The actual past movement of a stock', 'The market\'s expectation of future price swings', 'The speed of transaction execution', 'The interest rate set by the Fed'], correctAnswer: 1 },
+    { id: 'i9', question: 'A "Candlestick" chart shows:', options: ['Only the closing price', 'The open, high, low, and close for a period', 'The number of active traders', 'The historical dividend yield'], correctAnswer: 1 },
+    { id: 'i10', question: 'What is a "Gap Up"?', options: ['A sudden drop in stock price', 'When a stock opens at a higher price than it closed the previous day', 'An increase in trading fees', 'A period of no trading'], correctAnswer: 1 },
+    { id: 'i11', question: 'What is a "Trailing Stop"?', options: ['A stop order that follows the price up by a set amount', 'A physical stop at the exchange', 'A manual sell order', 'An order that only executes at the end of the day'], correctAnswer: 0 },
+    { id: 'i12', question: 'What is "Fundamental Analysis"?', options: ['Studying chart patterns', 'Evaluating a company\'s financial health and economic factors', 'Following social media trends', 'Trading based on news headlines only'], correctAnswer: 1 },
+    { id: 'i13', question: 'The "Bid-Ask Spread" is:', options: ['The total price of a stock', 'The difference between the highest buy and lowest sell price', 'The daily trading volume', 'The broker\'s commission'], correctAnswer: 1 },
+    { id: 'i14', question: 'What is "Alpha" in investing?', options: ['The first stock in a portfolio', 'The excess return of an investment relative to a benchmark', 'The total market risk', 'A type of trading software'], correctAnswer: 1 },
+    { id: 'i15', question: 'What is "Beta"?', options: ['The second version of a stock', 'A measure of a stock\'s volatility relative to the overall market', 'The average price of a stock', 'The number of shares outstanding'], correctAnswer: 1 }
   ],
   advanced: [
     { id: 'a1', question: 'The "Sharpe Ratio" is used to measure:', options: ['The speed of order execution', 'Risk-adjusted return', 'The dividend yield', 'The price-to-earnings growth'], correctAnswer: 1 },
     { id: 'a2', question: 'What is "Delta" in option Greeks?', options: ['Sensitivity to time decay', 'Sensitivity to volatility', 'Sensitivity to the price change of the underlying asset', 'Sensitivity to interest rates'], correctAnswer: 2 },
     { id: 'a3', question: 'What is the "Kelly Criterion" primarily used for?', options: ['Picking stocks', 'Determining optimal position sizing', 'Timing the market bottom', 'Measuring inflation'], correctAnswer: 1 },
     { id: 'a4', question: 'What is "Gamma" in options trading?', options: ['The rate of change in Delta', 'The rate of change in Theta', 'The total cost of the option', 'The expiration date'], correctAnswer: 0 },
-    { id: 'a5', question: 'A "Short Squeeze" happens when:', options: ['Everyone buys at once', 'Short sellers are forced to buy back shares as price rises', 'The market is overvalued', 'Brokers increase their fees'], correctAnswer: 1 }
+    { id: 'a5', question: 'A "Short Squeeze" happens when:', options: ['Everyone buys at once', 'Short sellers are forced to buy back shares as price rises', 'The market is overvalued', 'Brokers increase their fees'], correctAnswer: 1 },
+    { id: 'a6', question: 'What is "Theta" in options trading?', options: ['Sensitivity to price change', 'Sensitivity to time decay', 'Sensitivity to volatility', 'Sensitivity to interest rates'], correctAnswer: 1 },
+    { id: 'a7', question: 'What is "Contango"?', options: ['A type of dance', 'When the futures price is higher than the spot price', 'When the spot price is higher than the futures price', 'A sudden market crash'], correctAnswer: 1 },
+    { id: 'a8', question: 'What does "Vega" measure in options?', options: ['Sensitivity to time', 'Sensitivity to price', 'Sensitivity to changes in implied volatility', 'Sensitivity to the risk-free rate'], correctAnswer: 2 },
+    { id: 'a9', question: 'What is a "Gamma Squeeze"?', options: ['A fruit-related market event', 'Rapid buying triggered by options dealers hedging their positions', 'When a CEO sells all their shares', 'A type of dividend cut'], correctAnswer: 1 },
+    { id: 'a10', question: 'What is "Statistical Arbitrage"?', options: ['Trading based on rumors', 'Exploiting price inefficiencies between related financial instruments', 'Buying stocks with a high P/E ratio', 'Selling stocks randomly'], correctAnswer: 1 },
+    { id: 'a11', question: 'What is "Mean Reversion"?', options: ['When price moves away from the average forever', 'The theory that prices will eventually move back to an average level', 'A math error in trading', 'A period of extreme volatility'], correctAnswer: 1 },
+    { id: 'a12', question: 'What is an "Iceberg Order"?', options: ['A trade made in the Arctic', 'A large order split into smaller visible portions to hide true size', 'An order that never executes', 'A trade made on a stock market holiday'], correctAnswer: 1 },
+    { id: 'a13', question: 'What is the "Risk-Free Rate"?', options: ['The return on a high-risk tech stock', 'The theoretical rate of return on an investment with zero risk', 'The average return of the S&P 500', 'The interest rate charged by brokers'], correctAnswer: 1 },
+    { id: 'a14', question: 'What is "Quantitative Easing"?', options: ['A way to count stocks faster', 'A monetary policy where a central bank buys government securities', 'The process of listing a company on an exchange', 'A method for calculating market cap'], correctAnswer: 1 },
+    { id: 'a15', question: 'What is "Rho" in option Greeks?', options: ['Sensitivity to time decay', 'Sensitivity to interest rates', 'Sensitivity to price change', 'Sensitivity to volatility'], correctAnswer: 1 },
+    { id: 'a16', question: 'What is "Value at Risk" (VaR)?', options: ['The maximum possible profit', 'A statistical measure of the level of financial risk within a firm or portfolio', 'The current price of a stock', 'The total dividend payout'], correctAnswer: 1 },
+    { id: 'a17', question: 'What is a "Dark Pool"?', options: ['A neglected swimming pool', 'A private forum for trading securities that is not accessible to the public', 'A market crash in the energy sector', 'A type of low-liquidity stock'], correctAnswer: 1 },
+    { id: 'a18', question: 'What is "Smart Beta"?', options: ['A very intelligent stock', 'An investment style that uses alternative weighting schemes', 'A trading algorithm developed by AI', 'The beta of a highly profitable company'], correctAnswer: 1 },
+    { id: 'a19', question: 'What is "Pair Trading"?', options: ['Trading with a partner', 'A strategy that matches a long position with a short position in related assets', 'Buying two shares of the same stock', 'Trading two different currencies only'], correctAnswer: 1 },
+    { id: 'a20', question: 'What is "Market Depth"?', options: ['The physical depth of the exchange building', 'The market\'s ability to sustain large orders without price impact', 'The total number of years a stock has traded', 'The depth of a company\'s balance sheet'], correctAnswer: 1 }
   ]
 };
 
@@ -277,13 +307,89 @@ const Learning: React.FC = () => {
         </div>
       </div>
 
+      {/* Quiz Overlay */}
+      {activeQuiz && (
+        <div className="fixed inset-0 z-[120] flex items-center justify-center p-4">
+          <div className="absolute inset-0 bg-[#020617]/98 backdrop-blur-xl" onClick={() => activeQuiz.isComplete && setActiveQuiz(null)}></div>
+          <div className="relative w-full max-w-2xl glass-card rounded-[2.5rem] p-10 lg:p-14 border border-white/10 shadow-2xl animate-in zoom-in-95 duration-300">
+            {!activeQuiz.isComplete ? (
+              <>
+                <div className="flex justify-between items-center mb-10">
+                   <div>
+                      <span className="text-emerald-500 text-[10px] font-black uppercase tracking-[0.3em] mb-1 block">{activeQuiz.title}</span>
+                      <h4 className="text-sm font-mono text-slate-500 uppercase">Question {activeQuiz.currentIndex + 1} / {activeQuiz.questions.length}</h4>
+                   </div>
+                   <button onClick={() => setActiveQuiz(null)} className="text-slate-500 hover:text-white transition-colors">
+                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" /></svg>
+                   </button>
+                </div>
+                <div className="h-1.5 w-full bg-slate-900 rounded-full mb-12 overflow-hidden">
+                   <div className="h-full bg-emerald-500 transition-all duration-500" style={{ width: `${((activeQuiz.currentIndex + 1) / activeQuiz.questions.length) * 100}%` }}></div>
+                </div>
+                <h3 className="text-2xl font-bold text-white mb-10 leading-snug">{activeQuiz.questions[activeQuiz.currentIndex].question}</h3>
+                <div className="space-y-4">
+                  {activeQuiz.questions[activeQuiz.currentIndex].options.map((option, idx) => (
+                    <button 
+                      key={idx}
+                      onClick={() => handleQuizAnswer(idx)}
+                      className="w-full p-6 bg-slate-900 border border-slate-800 rounded-2xl text-left text-sm font-bold text-slate-300 hover:border-emerald-500/50 hover:bg-slate-800 transition-all active:scale-[0.98]"
+                    >
+                      {option}
+                    </button>
+                  ))}
+                </div>
+              </>
+            ) : (
+              <div className="text-center">
+                 <div className="w-20 h-20 bg-emerald-500/20 rounded-3xl mx-auto flex items-center justify-center mb-8">
+                   <svg className="w-10 h-10 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                 </div>
+                 <h2 className="text-4xl font-black uppercase tracking-tighter text-white mb-2">Module Evaluated</h2>
+                 <p className="text-slate-500 text-[10px] font-black uppercase tracking-widest mb-10">Verification Results Securely Processed</p>
+                 <div className="bg-slate-950 p-8 rounded-3xl border border-white/5 inline-block px-12 mb-10">
+                   <div className="text-[10px] font-black text-slate-500 uppercase tracking-widest mb-1">Total Score</div>
+                   <div className="text-5xl font-black text-white">{activeQuiz.score} <span className="text-slate-700">/ {activeQuiz.questions.length}</span></div>
+                 </div>
+                 <div className="max-h-[300px] overflow-y-auto mb-10 pr-2 space-y-4 text-left custom-scrollbar">
+                   {activeQuiz.questions.map((q, i) => {
+                     const isCorrect = activeQuiz.userAnswers[i] === q.correctAnswer;
+                     return (
+                       <div key={i} className={`p-5 rounded-2xl border ${isCorrect ? 'border-emerald-500/20 bg-emerald-500/5' : 'border-rose-500/20 bg-rose-500/5'}`}>
+                         <div className="flex justify-between items-start mb-2">
+                           <span className="text-[10px] font-black text-slate-500 uppercase">Q{i+1} Result</span>
+                           <span className={`text-[10px] font-black uppercase tracking-widest ${isCorrect ? 'text-emerald-500' : 'text-rose-500'}`}>
+                             {isCorrect ? 'Correct' : 'Incorrect'}
+                           </span>
+                         </div>
+                         <p className="text-sm font-bold text-white mb-2">{q.question}</p>
+                         {!isCorrect && (
+                           <div className="text-[10px] text-emerald-400 font-bold uppercase tracking-widest">
+                             Correct: {q.options[q.correctAnswer]}
+                           </div>
+                         )}
+                       </div>
+                     );
+                   })}
+                 </div>
+                 <button 
+                   onClick={() => setActiveQuiz(null)}
+                   className="w-full py-5 bg-emerald-500 text-slate-950 font-black rounded-2xl uppercase tracking-[0.2em] text-xs hover:bg-emerald-400 transition-all"
+                 >
+                   Return to Terminal
+                 </button>
+              </div>
+            )}
+          </div>
+        </div>
+      )}
+
       {/* Simulation Overlay - Video-Accurate UI */}
       {activeSimulation && sim && (
-        <div className="fixed inset-0 z-[100] flex items-center justify-center p-4">
+        <div className="fixed inset-0 z-[110] flex items-center justify-center p-4">
           <div className="absolute inset-0 bg-[#020617]/98 backdrop-blur-xl" onClick={() => !sim.isStarted && setActiveSimulation(null)}></div>
           
           {!sim.isStarted ? (
-            <div className="relative w-full max-w-2xl glass-card rounded-[2.5rem] p-12 text-center border border-white/10 shadow-2xl animate-in zoom-in-95 duration-300">
+            <div className="relative w-full max-w-2xl glass-card rounded-[2rem] p-12 text-center border border-white/10 shadow-2xl animate-in zoom-in-95 duration-300">
               <div className="absolute top-0 right-0 p-8">
                 <button onClick={() => setActiveSimulation(null)} className="text-slate-500 hover:text-white transition-colors">
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" /></svg>
