@@ -5,7 +5,26 @@ export enum NavItem {
   TOOLS = 'Tools',
   LEARNING = 'Learning',
   COMMUNITY = 'Community',
-  DIGEST = 'Digest'
+  DIGEST = 'Digest',
+  PROFILE = 'Profile'
+}
+
+export interface UserProfile {
+  uid: string;
+  name: string;
+  email: string;
+  photoURL: string | null;
+  createdAt: string;
+}
+
+export interface Lesson {
+  id: string;
+  title: string;
+  category: 'Basics' | 'Problems' | 'Solutions';
+  description: string;
+  content: string;
+  videoUrl: string;
+  order: number;
 }
 
 export interface StockData {

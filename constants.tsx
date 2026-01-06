@@ -1,97 +1,116 @@
 
-import React from 'react';
-import { Module, CaseStudy, DigestItem, StockData } from './types';
+import { Module, CaseStudy, DigestItem } from './types';
 
-export const MOCK_STOCKS: StockData[] = [
-  { symbol: 'SPX', price: 4781.56, change: 32.12, percent: 0.68 },
-  { symbol: 'NDX', price: 16823.45, change: 112.30, percent: 0.67 },
-  { symbol: 'BTC', price: 42321.10, change: -120.40, percent: -0.28 },
-  { symbol: 'ETH', price: 2518.20, change: 45.10, percent: 1.82 },
-  { symbol: 'TSLA', price: 210.15, change: -5.30, percent: -2.46 },
-  { symbol: 'AAPL', price: 185.60, change: 1.25, percent: 0.68 },
-  { symbol: 'NVDA', price: 547.10, change: 12.45, percent: 2.33 },
-];
-
+// Educational Modules for general reference
 export const EDUCATIONAL_MODULES: Module[] = [
   {
     id: 'm1',
-    title: 'Introduction to Stock Market',
-    description: 'Learn the fundamental concepts of the stock market, how it works, and why it exists.',
+    title: 'Market Mechanics 101',
+    description: 'Master the core dynamics of order books, liquidity providers, and the auction process.',
     category: 'Basics',
-    icon: '📊'
+    icon: 'bank'
   },
   {
     id: 'm2',
-    title: 'Understanding Market Volatility',
-    description: 'Explore the concept of market volatility, its causes, and how to manage it.',
+    title: 'Volatility Arbitrage',
+    description: 'Understand how market swings are measured and how professional traders mitigate variance.',
     category: 'Problems',
-    icon: '📉'
+    icon: 'chart'
   },
   {
     id: 'm3',
-    title: 'Diversification Strategies',
-    description: 'Learn how to reduce risk and build a more resilient portfolio through diversification.',
+    title: 'Position Sizing Protocols',
+    description: 'Algorithmic approaches to risk and portfolio survivability.',
     category: 'Solutions',
-    icon: '🛡️'
+    icon: 'shield'
   }
 ];
 
+// Restored Case Studies with Images
 export const CASE_STUDIES: CaseStudy[] = [
   {
     id: 'cs1',
-    title: 'The Volatile Tech Stock: A Lesson in Risk',
-    scenario: 'An enthusiastic investor, swayed by media hype, invested a significant portion of their capital into a high-flying tech stock at its peak.',
-    context: 'During a period of market euphoria for technology stocks, the investor ignored traditional valuation metrics and purchased shares at an all-time high.',
-    outcome: 'Shortly after the purchase, the tech sector experienced a sharp correction, and the stock plummeted by over 40%. The investor, panicked by the rapid decline, sold their shares at a substantial loss.',
+    title: 'The 2010 Flash Crash',
+    scenario: 'A trillion-dollar market wipeout triggered by high-frequency algorithmic spoofing in the E-mini S&P 500 futures market.',
+    context: 'Extreme order book imbalance caused by a large sell order executed via automated algorithm without price limits.',
+    outcome: 'Introduction of market-wide circuit breakers and stricter oversight of high-frequency trading (HFT) firms.',
     keyLearnings: [
-      'Avoid emotional trading and FOMO.',
-      'Always use stop-loss orders.',
-      'Fundamental analysis is crucial before investing.'
+      'Understanding Liquidity Black Holes',
+      'Execution Speed vs. Order Depth',
+      'Systemic Risk in Automated Trading'
     ],
-    date: '2023-10-15',
-    imageUrl: 'https://picsum.photos/seed/tech/800/400'
+    date: 'MAY 06, 2010',
+    imageUrl: 'https://images.unsplash.com/photo-1611974717482-4824252ef56a?auto=format&fit=crop&q=80&w=800'
   },
   {
     id: 'cs2',
-    title: 'Diversification Dilemma: The Single-Sector Bet',
-    scenario: 'A seasoned investor, confident in the long-term prospects of the renewable energy sector, allocated 80% of their portfolio to companies within this single industry.',
-    context: 'The investor believed that renewable energy was an unstoppable future trend and that individual stock selection would mitigate risk.',
-    outcome: 'Sudden policy changes and a global supply chain disruption impacted the renewable energy sector, causing a widespread downturn. The investor\'s highly concentrated portfolio suffered a substantial loss.',
+    title: 'GameStop Short Squeeze',
+    scenario: 'Retail investors coordinated a massive buying campaign that forced institutional short sellers into a multi-billion dollar cover.',
+    context: 'Short interest exceeded 140% of the float, creating a technical trap where buy orders had no available sellers.',
+    outcome: 'Massive wealth transfer to early retail participants and the collapse of several high-profile hedge funds.',
     keyLearnings: [
-      'Diversify across different sectors.',
-      'Avoid over-concentration even in "safe" bets.',
-      'Monitor macroeconomic factors.'
+      'Short Interest Exposure Metrics',
+      'Social Sentiment as Alpha',
+      'Technical Liquidity Trap Mechanics'
     ],
-    date: '2023-11-20',
-    imageUrl: 'https://picsum.photos/seed/energy/800/400'
+    date: 'JAN 2021',
+    imageUrl: 'https://images.unsplash.com/photo-1612010167108-3e6b327405f0?auto=format&fit=crop&q=80&w=800'
+  },
+  {
+    id: 'cs3',
+    title: 'Black Monday 1987',
+    scenario: 'The largest one-day percentage drop in stock market history, fueled by portfolio insurance and program trading.',
+    context: 'Global market panic led to a 22.6% drop in the Dow Jones Industrial Average in a single session.',
+    outcome: 'Total overhaul of exchange trading rules and the birth of modern "Circuit Breakers".',
+    keyLearnings: [
+      'Cascading Programmatic Selling',
+      'The Danger of Portfolio Insurance',
+      'Global Market Interconnectivity'
+    ],
+    date: 'OCT 19, 1987',
+    imageUrl: 'https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&q=80&w=800'
+  },
+  {
+    id: 'cs4',
+    title: 'The Nikkei Bubble Burst',
+    scenario: 'The collapse of Japan\'s "Everything Bubble" in real estate and stocks leading to decades of stagnation.',
+    context: 'Extreme over-valuation where the land under the Imperial Palace was worth more than all of California.',
+    outcome: 'A "Lost Decade" of growth and a total shift in Japanese monetary policy (Zero Interest Rates).',
+    keyLearnings: [
+      'Identifying Asset Bubbles',
+      'The Role of Monetary Policy',
+      'Long-term Mean Reversion'
+    ],
+    date: 'DEC 1989',
+    imageUrl: 'https://images.unsplash.com/photo-1551288049-bbbda536339a?auto=format&fit=crop&q=80&w=800'
   }
 ];
 
 export const DIGEST_DATA: DigestItem[] = [
   {
     id: 'd1',
-    date: '2024-07-22',
-    title: 'Tech Rally Continues Amidst Strong Earnings',
-    summary: 'Major tech indices saw significant gains today as several large-cap technology companies reported better-than-expected quarterly earnings.',
-    sentiment: 'Bullish',
+    date: 'OCT 24, 2024',
+    title: 'Macro Resilience Patterns',
+    summary: 'Institutional flows remain stable despite short-term yield volatility. Tech sector maintains support.',
+    sentiment: 'Neutral-Bullish',
     headlines: [
-      'Tech Giants Beat Earnings Estimates',
-      'AI Demand Drives Growth in Chipmaker Stocks',
-      'Broad Market Indices Reach New Highs'
+      'Tech sector maintains key support levels',
+      'Central banks signal extended pause',
+      'Manufacturing data beats estimates'
     ],
-    impact: 'Market confidence remains high in the tech sector\'s growth prospects.'
+    impact: 'Focus on quality balance sheets as rate sensitivity persists in small-cap sectors.'
   },
   {
     id: 'd2',
-    date: '2024-07-21',
-    title: 'Energy Sector Volatility on Geopolitical Tensions',
-    summary: 'Oil prices surged, then retreated, as new geopolitical developments in the Middle East created uncertainty in global energy supply.',
-    sentiment: 'Neutral-Bearish',
+    date: 'OCT 23, 2024',
+    title: 'Liquidity Rebalancing',
+    summary: 'Major indices undergoing quarterly rebalancing causing end-of-day volatility spikes.',
+    sentiment: 'Neutral',
     headlines: [
-      'Geopolitical Tensions Drive Oil Price Spikes',
-      'Energy Sector Reacts to Global Supply News',
-      'Analysts Weigh Potential Impact on Global Markets'
+      'ETF inflows reach yearly peak',
+      'VIX shows signs of compression',
+      'Credit spreads continue to narrow'
     ],
-    impact: 'Energy stocks offer defensive qualities during market uncertainty.'
+    impact: 'Execution slippage expected to increase during closing auctions across major tech components.'
   }
 ];
